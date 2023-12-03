@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Singup</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <section id="mainPage">
+      <div id="userMenu">
+        <img
+          id="userMenubtn"
+          src="user-solid.svg"
+          alt="informações do usuário"
+        /> <br>
+        <div id="userMenuInfos">
+          <p class="menuInfos" id="menuNome"></p>
+          <p class="menuInfos" id="menuEmail"></p>
+          <p class="menuInfos" id="menuCpf"></p>
+          <p class="menuInfos" id="menuSenha"></p> <input type="checkbox" name="mostrarSenha" id="mostrarSenha">
+          <p class="menuInfos" id="menuGenero"></p>
+        </div>
+      </div>
+      <div class="mainContain">
+        <input class="mainbtn" type="button" value="Login" id="loginbtn" />
+        <input class="mainbtn" type="button" value="Sing-Up" id="singupbtn" />
+      </div>
+    </section>
+    <!--PÁGINA DE SING-UP-->
+    <section id="singupPage">
+      <img class="homebtn" src="house-solid.svg" alt="voltar à página incial" />
+
+      <div class="singupContain">
+        <h2>Sing-Up</h2>
+
+        <input
+          class="campos"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Digite um nome de usuário"
+        />
+        <p id="nomeErro" class="erro"></p>
+        <input
+          class="campos"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite um email"
+        />
+        <p id="emailErro" class="erro"></p>
+        <input
+          class="campos"
+          type="password"
+          name="pass"
+          id="senha"
+          placeholder="Digite sua senha"
+        />
+        <p id="senhaErro" class="erro"></p>
+        <input
+          class="campos"
+          type="text"
+          name="txtcpf"
+          id="cpf"
+          placeholder="Digite seu CPF"
+        />
+        <p id="cpfErro" class="erro"></p>
+
+        <p class="genero">
+          Gênero:
+          <select name="genero" id="genero">
+            <option value="masc">Masculino</option>
+            <option value="fem">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="naoInformar">Prefiro não dizer</option>
+          </select>
+        </p>
+        <p id="mensagem"></p>
+        <input type="submit" value="Criar Conta" id="criarConta" /> <br />
+        <input type="button" value="Login" id="loginRedirect" />
+      </div>
+    </section>
+    <!--PÁGINA DE SING-UP-->
+
+    <!--PÁGINA DE LOGIN-->
+    <section id="loginPage">
+      <img class="homebtn" src="house-solid.svg" alt="voltar à página incial" />
+      <div class="loginContain">
+        <h2>Login</h2>
+        <input
+          class="camposLogin"
+          type="text"
+          id="loginNome"
+          placeholder="Digite um nome de usuário"
+        />
+        <p id="nomeLoginErro" class="erroLogin"></p>
+        <input
+          class="camposLogin"
+          type="email"
+          id="loginEmail"
+          placeholder="Digite um email"
+        />
+        <p id="emailLoginErro" class="erroLogin"></p>
+        <input
+          class="camposLogin"
+          type="password"
+          id="loginSenha"
+          placeholder="Digite uma senha"
+        />
+        <p id="senhaLoginErro" class="erroLogin"></p>
+        <p id="mensagemLogin"></p>
+        <input type="button" value="Entrar" id="login" />
+        <input type="button" value="Sing-Up" id="singupRedirect" />
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+body{
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+/*Area de SingUp*/
+#singupPage{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #2a5af7 , #9233ff );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: none;
+}
+.singupContain{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: aliceblue ;
+    padding: 10px;
+    width: 350px;
+    border-radius: 20px;
+}
+.campos{
+    border: solid 1px #2a5af7;
+    border-radius: 2px;
+    font: normal 15px arial;
+    margin-top: 20px;
+    transition: box-shadow 0.5s;
+}
+.erro{
+    position: absolute;
+    left: 24%;
+    font-size: 11px;
+    margin: 0;
+    text-align: left ;
+    color: red; 
+}
+.genero{
+    font: normal 15px arial;
+    margin-top: 12px;
+    margin-bottom: 5px
+}
+#genero{
+    border: solid 1px #2a5af7;
+    padding: 1px;
+    border-radius: 2px;
+    transition: box-shadow 0.5s;
+}
+#mensagem{
+    position: relative;
+    text-align: center;
+    font: normal 12px arial;
+    margin:0;
+}
+#criarConta{
+    margin-top: 11px;
+    border: solid 1px #2a5af7;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #305ef5;
+    color: white;
+    transition: box-shadow 0.5s;
+    font-weight: 500;
+}
+#loginRedirect{
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+    padding-left: 10px;
+    font: 11px arial;
+    color: #9233ff;
+    border: none;
+    background-color: aliceblue;
+}
+#loginRedirect:hover{
+    color: #f30000;
+}
+
+.campos:hover{
+    box-shadow: 0 0 10px #305ef5;
+}
+#genero:hover{
+    box-shadow: 0 0 10px #305ef5;
+}
+#criarConta:hover{
+    box-shadow: 0 0 12px #0138f0;
+}
+/*Area de SingUp*/
+
+/*Área de Login*/
+#loginPage{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #9233ff , #f30000 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: none;
+}
+.loginContain{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: aliceblue ;
+    padding: 10px;
+    width: 350px;
+    border-radius: 20px;
+}
+.camposLogin{
+    border: solid 1px #9233ff;
+    border-radius: 2px;
+    font: normal 15px arial;
+    margin-top: 20px;
+    transition: box-shadow 0.5s;
+}
+.erroLogin{
+    position: absolute;
+    left: 24%;
+    font-size: 11px;
+    margin: 0;
+    text-align: left ;
+    color: red; 
+}
+#login{
+    margin-top: 11px;
+    border: solid 1px #9233ff;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #9233ff;
+    color: #ffffff;
+    transition: box-shadow 0.5s;
+    font-weight: 500;
+}
+.camposLogin:hover{
+    box-shadow: 0 0 10px #9233ff;
+}
+#login:hover{
+    box-shadow: 0 0 12px #9233ff;
+}
+#singupRedirect{
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+    padding-left: 10px;
+    font: 11px arial;
+    color: #9233ff;
+    border: none;
+    background-color: aliceblue;
+}
+#singupRedirect:hover{
+    color:#0138f0;
+}
+/*Área de Login*/
+
+/*Página Inicial*/
+#mainPage{
+    font: arial;
+    background-color: #9233ff;
+    height: 100vh;
+    transition: display 0.5s;
+}
+.mainContain{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mainbtn{
+    background-color: #6d00eb;
+    border: none;
+    width: 120px;
+    height: 50px;
+    font-size: large;
+    border-radius: 20px;
+    margin: 10px;
+    color: aliceblue;
+    transition: box-shadow 0.5s;
+}
+.mainbtn:hover{
+    box-shadow: 0 0 30px #4c01a1;
+}
+.homebtn{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    transition: background-color 0.55s;
+    transition: box-shadow 0.5s;
+}
+.homebtn:hover{
+    background-color: #ffffff3d;
+    box-shadow: 0 0 25px #fffefe;
+}
+
+#userMenu{
+    font-family: Arial;
+    margin: 3px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 270px;
+    border-radius: 10px;
+}
+#userMenuInfos{
+    display: none;
+    padding-left: 10px;
+    margin-top: 0;
+}
+.menuInfos{
+    margin: 10px;
+}
+#menuSenha{
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+}
+#userMenubtn{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    transition: background-color 0.55s;
+    transition: box-shadow 0.5s;
+}
+#userMenubtn:hover{
+    background-color: #ffffff3d;
+    box-shadow: 0 0 25px #fffefe;
+}
